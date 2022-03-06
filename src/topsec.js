@@ -1,11 +1,7 @@
+import React from "react"
 
-window.addEventListener("load",function(){
-   const loader =document.querySelector(".loader");
-   loader.className += " hidden";
-  });
-
-
-  /*Typing effect */
+function topsec(){
+       /*Typing effect */
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -62,4 +58,34 @@ window.addEventListener("load",function(){
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #000 }";
     document.body.appendChild(css);
   };
-  
+
+
+
+    return(<>
+     <section id="top" class="main-sec">
+       <img class="bk-img-top" src="images/neon.png" alt="" /> 
+       <img class="mob-bk-im-top" src="images/mobile-bk.png" alt="" /> 
+       
+       <div class="top-sec-content">
+         
+              <h1 class="im-inline-top-mob" >Hey!</h1>
+              <h3 class="im-inline-top-mob" >I'm </h3>
+              <h1><b> MANAN SHARMA</b></h1>
+             
+                    <h1>A 
+                    <span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ " Web developer.", " Footballer.", " Sophomore.", " Blogger."]'></span>
+                    </h1>
+                    <div class=" soc-links">
+                            <a class="soc-item" href="https://www.linkedin.com/notifications/"><i style={{color:"black"}} class="fab fa-lg fa-linkedin-in"></i></a>
+                            <a class="soc-item" href="https://www.instagram.com/manan_shxrma/"><i style={{color:"black"}} class="fab fa-lg fa-instagram"></i></a>
+                            <a class="soc-item" href="https://github.com/manan-shxrma"><i style={{color:"black"}} class="fab fa-lg fa-github"></i></a>
+                            <a class="soc-item" href="https://www.quora.com/profile/Manan-Sharma-252"><i style={{color:"black"}} class="fab fa-lg fa-quora"></i></a>
+                   </div>
+        </div>
+    </section> </>)
+}
+
+export default topsec
