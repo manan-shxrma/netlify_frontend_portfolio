@@ -10,12 +10,14 @@
     overflow-x:hidden;
     object-fit: fill;
     max-width: -webkit-fill-available;
+    width: 100%;
+    height: 100%;
 }
 .soc-links{
     margin-top: 2rem;
 }
 .soc-item{
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 .mob-bk-im-top{
     position: absolute;
